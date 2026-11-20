@@ -123,7 +123,7 @@
   <header>
     <div class="marca">
       <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"><path d="M5 10v4M8.5 7.5v9M12 5v14M15.5 8.5v7M19 11v2"/></svg></div>
-      <div><h1 data-i18n="h1">Transcriptor <span>de entrevistas</span></h1><div class="sub" data-i18n="sub">De la grabación al Word en un clic</div></div>
+      <div><h1 data-i18n="h1">Transcriptor <span>de audio</span></h1><div class="sub" data-i18n="sub">De la grabación al Word en un clic</div></div>
     </div>
     <div class="derecha"><div class="badge"><i></i><span data-i18n="badge">100% local · el audio no sale de tu Surface</span></div>
       <div class="lang" id="lang"><button data-l="es">ES</button><button data-l="en">EN</button></div></div>
@@ -208,7 +208,7 @@
 <script>
 const $ = s => document.querySelector(s);
 const T = {
- es:{h1:'Transcriptor <span>de entrevistas</span>', sub:'De la grabación al Word en un clic', badge:'100% local · el audio no sale de tu Surface',
+ es:{h1:'Transcriptor <span>de audio</span>', sub:'De la grabación al Word en un clic', badge:'100% local · el audio no sale de tu Surface',
   s1:'1 · Grabación', drop:'Arrastra tu grabación aquí', drop2:'o haz clic para elegirla · MP4, M4A, MP3, WAV',
   s2:'2 · Calidad', rapida:'Rápida<small>~15 min por hora</small>', precisa:'Precisa<small>~45 min por hora</small>',
   s3:'3 · Idioma', auto:'Automático', ingles:'Inglés', espanol:'Español',
@@ -223,7 +223,7 @@ const T = {
   perdida0:'Se perdió la conexión', perdida1:'El programa no responde. Si la transcripción alcanzó a terminar, ya está en la carpeta transcripciones. Ábrelo de nuevo desde el escritorio.',
   hablante:'Hablante', escuchando:'Whisper está escuchando la grabación y escribiendo cada frase.', frases:'frases', faltan:'faltan ~{n} min',
   lista0:'¡Transcripción lista!', guardada:'Guardada como "{f}" en la carpeta transcripciones.', minProc:'min de proceso', error0:'Algo salió mal'},
- en:{h1:'Interview <span>Transcriber</span>', sub:'From recording to Word in one click', badge:'100% local · your audio never leaves this computer',
+ en:{h1:'Audio <span>Transcriber</span>', sub:'From recording to Word in one click', badge:'100% local · your audio never leaves this computer',
   s1:'1 · Recording', drop:'Drop your recording here', drop2:'or click to choose it · MP4, M4A, MP3, WAV',
   s2:'2 · Quality', rapida:'Fast<small>~15 min per hour</small>', precisa:'Accurate<small>~45 min per hour</small>',
   s3:'3 · Language', auto:'Automatic', ingles:'English', espanol:'Spanish',
@@ -263,7 +263,7 @@ function aplicarIdioma(){
   document.documentElement.lang = LANG;
   document.querySelectorAll('[data-i18n]').forEach(e=>{ e.innerHTML = t(e.dataset.i18n); });
   document.querySelectorAll('#lang button').forEach(b=>b.classList.toggle('on', b.dataset.l===LANG));
-  document.title = LANG==='en' ? 'Interview Transcriber' : 'Transcriptor';
+  document.title = LANG==='en' ? 'Audio Transcriber' : 'Transcriptor';
 }
 
 const opc = {calidad:'rapida', idioma:'auto', voces:'auto'};

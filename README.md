@@ -4,6 +4,8 @@ Free, local tool to transcribe audio recordings into text using OpenAI Whisper.
 
 Everything runs on your own computer: the audio never leaves your machine, there are no subscriptions and no API costs.
 
+![Transcribing with live speaker separation](docs/screenshot-transcribing.png)
+
 ## What it does
 
 * Transcribes recordings (m4a, mp3, wav, ogg, mp4 and more) into text with timestamps, for example `[00:12:45]`
@@ -13,6 +15,12 @@ Everything runs on your own computer: the audio never leaves your machine, there
 * Custom vocabulary list so names, companies and acronyms are spelled correctly
 * Simple browser interface that runs locally (localhost), plus a command line option
 * Exports to text and Word
+
+## Screenshots
+
+| Ready to start | Transcript ready |
+|---|---|
+| ![Home screen](docs/screenshot-home.png) | ![Finished transcript](docs/screenshot-ready.png) |
 
 ## How to use it (Windows)
 

@@ -1,5 +1,5 @@
 """
-Transcriptor de entrevistas: version con interfaz moderna.
+Transcriptor de audio: version con interfaz moderna.
 Abre una pagina en tu navegador, pero todo corre en tu computadora (localhost).
 No necesita internet ni programas extra. Reutiliza el motor de app.py.
 """
@@ -228,7 +228,7 @@ def crear_acceso_directo():
         f"$s.Arguments='\"{q(CARPETA / 'app_web.py')}\"';"
         f"$s.WorkingDirectory='{q(CARPETA)}';"
         f"$s.IconLocation='{q(ICONO_ICO)}';"
-        "$s.Description='Transcriptor de entrevistas';"
+        "$s.Description='Transcriptor de audio';"
         "$s.Save()}"
     )
     try:
