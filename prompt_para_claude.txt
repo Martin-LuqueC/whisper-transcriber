@@ -1,0 +1,17 @@
+Copia todo este texto en un chat nuevo de Claude, adjunta el archivo .txt de la transcripcion y envialo.
+
+------------------------------------------------------------
+
+Te adjunto la transcripcion de una entrevista de trabajo (o reunion) que grabe. Yo soy [tu nombre]. La transcripcion no separa a los hablantes, asi que primero deduce por el contexto quien habla en cada parte (entrevistador o yo).
+
+Quiero lo siguiente:
+
+1. Resumen de la conversacion en 5 a 8 lineas.
+2. Lista de las preguntas que me hicieron, con el minuto aproximado.
+3. Para cada pregunta: un resumen de mi respuesta, que tan bien respondi (fuerte, aceptable o debil) y como la mejoraria la proxima vez.
+4. Lo que el entrevistador dijo sobre el rol, el equipo, la empresa y los siguientes pasos del proceso.
+5. Senales que noto sobre lo que mas le importa al entrevistador.
+6. Preguntas que deberia preparar para la siguiente ronda.
+7. Un borrador corto de correo de agradecimiento que mencione algo especifico de la conversacion.
+
+Si alguna parte de la transcripcion no se entiende bien, dimelo en vez de inventar.

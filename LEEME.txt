@@ -1,0 +1,78 @@
+TRANSCRIPTOR DE ENTREVISTAS Y REUNIONES
+Gratis. Todo corre en tu computadora. El audio nunca sale de tu Surface.
+
+============================================================
+INSTALACION (solo la primera vez, unos 15 minutos)
+============================================================
+
+PASO 1. Descomprime esta carpeta
+  Clic derecho en el archivo .zip > "Extraer todo".
+  Ponla en un lugar facil, por ejemplo en Documentos.
+
+PASO 2. Instala Python de 64 bits (x64)
+  Tu Surface tiene procesador ARM, y Whisper necesita el Python
+  normal de 64 bits. Puedes tenerlo junto a tu Python 3.14; no
+  se pelean.
+  1. Ve a https://www.python.org/downloads/windows/
+  2. Busca la version mas reciente de "Python 3.13" que tenga
+     instaladores y haz clic en "Download Windows installer (64-bit)".
+     NO elijas el que dice ARM64.
+  3. Abre el instalador. NO marques "Add python.exe to PATH"
+     (asi tu Python 3.14 queda como esta). Clic en "Install Now".
+
+PASO 3. (Ya no hace falta nada mas: instalar.bat encuentra solo
+  el Python correcto.)
+
+PASO 4. Haz doble clic en instalar.bat
+  Si Windows muestra un aviso azul ("Windows protegio su PC"),
+  haz clic en "Mas informacion" > "Ejecutar de todas formas".
+  Espera hasta que diga "Instalacion terminada".
+
+============================================================
+USO DIARIO
+============================================================
+
+1. Pasa la grabacion del celular a la carpeta "grabaciones".
+   Lo mas facil: sube el audio a Google Drive desde el celular
+   y descargalo en la Surface. (Android suele grabar en .m4a,
+   y eso funciona perfecto.)
+
+2. Doble clic en transcribir.bat
+   * Calidad: 1 (rapido) para el dia a dia; 2 (preciso) para
+     entrevistas importantes, si tienes tiempo.
+   * Idioma: 1 (automatico) funciona bien. Si la entrevista es
+     toda en ingles, elige 2 y sale un poco mejor.
+   La primera vez descarga el modelo (puede tardar varios minutos).
+   Deja la laptop enchufada para que vaya mas rapido.
+
+3. El texto queda en la carpeta "transcripciones", con la hora
+   de cada frase, ej. [00:12:45].
+
+4. Para el analisis: abre prompt_para_claude.txt, copialo en un
+   chat de Claude y adjunta la transcripcion. Te da el resumen,
+   las preguntas que te hicieron, como mejorar tus respuestas y
+   el correo de agradecimiento.
+
+TIP: agrega en vocabulario.txt nombres de personas y empresas
+de cada entrevista para que los escriba bien.
+
+Si una grabacion ya fue transcrita, el programa la salta.
+Para repetirla, borra su .txt en "transcripciones".
+
+============================================================
+SI ALGO FALLA
+============================================================
+
+* "No encontre un Python compatible": repite el PASO 2, asegurate
+  de haber elegido "Windows installer (64-bit)" y reinicia la Surface.
+
+* Error de "DLL" o "msvcp140" al transcribir: instala el
+  "Microsoft Visual C++ Redistributable" (x64) desde la pagina
+  oficial de Microsoft y vuelve a intentar.
+
+* Va muy lento: usa la calidad 1 y deja la Surface enchufada.
+  En Surface ARM, Windows traduce el programa por dentro, asi que
+  puede ir un poco mas lento que en otras laptops.
+
+* Cualquier otro error: toma una foto o copia el mensaje y
+  pasaselo a Claude.

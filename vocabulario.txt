@@ -1,0 +1,7 @@
+# Escribe aqui, una por linea, palabras que Whisper suele escribir mal:
+# nombres de personas, empresas, siglas y terminos tecnicos.
+# Las lineas que empiezan con # se ignoran.
+FP&A
+EBITDA
+P&L
+Power BI

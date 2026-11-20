@@ -1,0 +1,14 @@
+# Audio y textos personales: nunca se suben
+grabaciones/
+transcripciones/
+
+# Modelos de Whisper y voces (pesados, se descargan solos)
+modelos/
+
+# Archivos que Python genera en cada computadora
+venv/
+__pycache__/
+*.pyc
+
+# Historial de errores local
+registro.txt
